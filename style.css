@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #B8D8C0;
+    color: #18352A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #A4CDB0;
+    border-bottom: 1px solid #7EAE8D;
+}
+
+nav a {
+    color: #18352A;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #2E7650;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+    color: #174D35;
+}
+
+#home h2 {
+    color: #2E7650;
+}
+
+#home a {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #276749;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#home a:hover {
+    background-color: #1E5038;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 700px;
+}
+
+.hero-image {
+    flex: 0 0 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+
+    /* Soft shadow without putting the photo in a box */
+    filter: drop-shadow(0 15px 15px rgba(24, 53, 42, 0.20));
+}
+
+@media (max-width: 800px) {
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+}
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.project-button,
+.resume-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-button {
+    background-color: #276749;
+    color: white;
+}
+
+.resume-button {
+    background-color: transparent;
+    color: #276749;
+    border: 2px solid #276749;
+}
+
+.project-button:hover {
+    background-color: #1E5038;
+}
+
+.resume-button:hover {
+    background-color: #276749;
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 12px 24px;
+    background-color: #276749;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #1E5038;
+    transform: translateY(-2px);
+}
