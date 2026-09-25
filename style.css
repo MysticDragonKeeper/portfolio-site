@@ -234,3 +234,134 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
     }
 }
+
+/* -------------------------
+   PROJECTS & LABS
+-------------------------- */
+
+#projects {
+    padding: 80px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 18px;
+
+    border: 1px solid rgba(39, 103, 73, 0.25);
+
+    box-shadow:
+        0 8px 20px rgba(24, 53, 42, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 28px rgba(24, 53, 42, 0.15);
+}
+
+.project-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #174D35;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-tools {
+    color: #276749;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.project-status {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    background-color: #276749;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.project-status.coming-soon {
+    background-color: transparent;
+    color: #276749;
+    border: 1px solid #276749;
+}
+
+.project-section-title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #174D35;
+    font-size: 1.7rem;
+}
+
+.labs-title {
+    margin-top: 70px;
+}
+
+.labs-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-status.completed {
+    background-color: #276749;
+}
+
+.project-status.active {
+    background-color: #174D35;
+}
+
+.project-status.ongoing {
+    background-color: transparent;
+    color: #276749;
+    border: 1px solid #276749;
+}
+
+@media (max-width: 800px) {
+
+    .projects-container,
+    .labs-container {
+        grid-template-columns: 1fr;
+    }
+
+}
