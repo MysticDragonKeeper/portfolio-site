@@ -299,12 +299,29 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
+.project-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(39, 103, 73, 0.25);
+    box-shadow: 0 8px 20px rgba(24, 53, 42, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    /* ADD THESE */
+    display: flex;
+    flex-direction: column;
+}
+
 .project-tools {
     color: #276749;
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 25px;
+    margin-top: auto;
 }
 
 .project-status {
